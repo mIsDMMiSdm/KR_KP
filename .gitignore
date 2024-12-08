@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Docker
+*.log
+*.pid
+*.swp
+*.bak
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# React build output
+/build/
+dist/
+
+# Environment variables
+.env
+
+# Docker Compose files
+docker-compose.override.yml
+docker-compose.prod.yml
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
