@@ -11,7 +11,13 @@
 
 ## Структура проекта
 
-/backend # Код бэкенда (FastAPI) /frontend # Код фронтенда (React) /nginx # Конфигурация для Nginx docker-compose.yml # Docker Compose файл для запуска всех сервисов Dockerfile.backend # Dockerfile для бэкенда Dockerfile.frontend # Dockerfile для фронтенда
+/backend: Содержит код бэкенда, написанный на FastAPI.
+/frontend: Содержит код фронтенда, написанный на React.
+/nginx: Конфигурационные файлы для Nginx, используемого как балансировщик нагрузки.
+docker-compose.yml: Конфигурационный файл для Docker Compose, который запускает все сервисы проекта.
+Dockerfile.backend: Файл для создания Docker-образа для бэкенда.
+Dockerfile.frontend: Файл для создания Docker-образа для фронтенда.
+nginx.conf: Конфигурация для Nginx.
 
 markdown
 
