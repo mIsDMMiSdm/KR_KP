@@ -10,6 +10,7 @@ class Account(BaseModel):
     name: str
     deposit: float
 
+
 accounts = []
 
 @app.post("/accounts", response_model=List[Account])
