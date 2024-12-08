@@ -37,9 +37,8 @@ markdown
 
 Для запуска проекта с одним экземпляром бэкенда:
 
-bash
-
-docker-compose up --build
+   ```bash
+   docker-compose up --build
 
 Для масштабирования бэкенда до 3-х экземпляров:
 
