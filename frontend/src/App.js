@@ -3,8 +3,8 @@ import "./App.css";
 
 function App() {
   const [accounts, setAccounts] = useState([
-    { id: 1, name: "Account 1", deposit: 1000 },
-    { id: 2, name: "Account 2", deposit: 500 },
+    { id: 1, name: "Вклад 1", deposit: 0 },
+    { id: 2, name: "Вклад 2", deposit: 0 },
   ]);
 
   const [newAccountName, setNewAccountName] = useState("");
@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Система управления счетами</h1>
+      <h1>Система управления вкладами</h1>
 
       {/* Список аккаунтов */}
       <div className="accounts">
@@ -111,7 +111,7 @@ function App() {
 
       {/* Добавление нового аккаунта */}
       <div className="add-account">
-        <h2>Добавить новый аккаунт</h2>
+        <h2>Добавить новый вклад</h2>
         <input
           type="text"
           placeholder="Имя аккаунта"

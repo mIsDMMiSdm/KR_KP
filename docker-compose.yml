@@ -1,3 +1,4 @@
+version: '3'
 services:
   frontend:
     build:
@@ -7,6 +8,7 @@ services:
     networks:
       - app_network
 
+  # Разворачиваем 3 контейнера бэкенда
   backend:
     build:
       context: ./backend
@@ -15,6 +17,8 @@ services:
       - "8000"  # Только внутри контейнера
     networks:
       - app_network
+    deploy:
+      replicas: 3  # Запуск 3 экземпляров контейнера backend
 
   nginx:
     image: nginx:latest
@@ -31,4 +35,3 @@ services:
 networks:
   app_network:
     driver: bridge
-
